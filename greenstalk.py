@@ -15,7 +15,7 @@ DEFAULT_TTR = 60
 class Job:
     """A job returned from the server."""
 
-    __slots__ = ('id', 'body')
+    __slots__ = ('id', 'body', '__dict__')
 
     def __init__(self, id: int, body: Body) -> None:
         self.id = id
